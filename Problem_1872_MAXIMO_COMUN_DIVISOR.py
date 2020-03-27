@@ -19,6 +19,6 @@ if __name__ == "__main__":
                 print(j)
                 aux = 0
         if aux == 1:
-            print("-1")
+            print(aux*-1)
 
 
