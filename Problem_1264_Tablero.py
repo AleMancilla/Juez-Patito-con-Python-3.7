@@ -37,12 +37,18 @@
 n = int(input())
 for i in range(n):
     dat = input().split()
-    a = int(dat[0])
+    a = int(dat[0]) # filas
     b = int(dat[1])
-    mat = []
+    
+    mat = [] # vector [ "hola", "mundo", "mundial" ] 
+                # mat[0] = "MARI"
+                # print(mat[0])
+
     for j in range(a):
-        mat.append([])
-        mat[j]=input().split()
+        mat.append([]) # vector [[] ]
+        mat[j]=input().split() # vector [ ]   "hola mundo mundial".split() = "hola" "mundo"
+
+
 
     var = 0
     for j in range(a):
@@ -54,3 +60,10 @@ for i in range(n):
     print(var)
 
     
+# 1
+# 2 7
+# 5 1 5 1 5 1 5
+# 1 5 1 5 1 5 1
+# 
+# 5_5_5_5
+# _5_5_5_

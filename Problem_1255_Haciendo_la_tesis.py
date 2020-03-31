@@ -38,21 +38,21 @@ import sys
 
 for datos in sys.stdin:
     datos = datos.split()
-    h1 = int(datos[0])
-    m1 = int(datos[1])
-    h2 = int(datos[2])
-    m2 = int(datos[3])
+    h1 = int(datos[0])  #inicial
+    m1 = int(datos[1])  #inicial
+    h2 = int(datos[2])  #final
+    m2 = int(datos[3])  #minuto final
 
     if( m1 > m2 ):
-        m2 = m2 +60 
-        h1 = h1+1
+        m2 = m2 + 60    #10 + 60 = 70
+        h1 = h1 + 1     #23+1=24
     
-    hora = h2 - h1
-    minutos = m2 -m1
+    hora = h2 - h1      # 0 - 24 = -24
+    minutos = m2 -m1    # 70 - 45 = 25
 
-    if (hora <0):
-        hora = hora*-1
+    if (hora < 0):
+        hora = hora*-1 #24
 
     if hora == 24 :
-        hora =0
+        hora = 0
     print(str(hora) + " "+ str(minutos))
